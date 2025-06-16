@@ -38,9 +38,6 @@ Our extension requests the following permissions to function correctly:
 
 *   **`storage`**: Essential for saving your to-do lists and ledger data so it persists between browser sessions and syncs across your devices.
 *   **`alarms`**: Used to run a daily background task that resets daily tasks and moves due future plans to the daily list.
-*   **`contextMenus` (Reserved for future use)**: To allow you to quickly add tasks by right-clicking selected text on a webpage.
-*   **`notifications` (Reserved for future use)**: To provide timely reminders for your tasks.
-*   **`identity` (Reserved for future use)**: To securely authenticate with your Google account for the upcoming Google Sheets synchronization feature.
 
 ## 4. Third-Party Services
 
