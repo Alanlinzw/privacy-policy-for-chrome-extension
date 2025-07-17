@@ -1,6 +1,6 @@
 # Privacy Policy for 高效待办清单 Chrome Extension
 
-**Last Updated:** 2025-07-12
+**Last Updated:** 2025-07-17
 
 Thank you for using 高效待办清单 (To-Do List), a Chrome extension developed by Alan Smith. Your privacy is important to us. This Privacy Policy explains what information we collect, how we use and store it, and the permissions we require.
 
@@ -62,10 +62,13 @@ Our extension requests the following permissions to function correctly:
     *   Export your task or ledger history as `.xlsx` (Excel) files.
     *   Backup your entire application data as a `.json` file for manual transfer or safekeeping.
 
-*   **Host Permissions (`https://api.openai.com/` and `https://generativelanguage.googleapis.com/`)**: These permissions are **strictly required for the core AI Assistant feature**.
+*   **Host Permissions (`https://api.openai.com/`  `https://generativelanguage.googleapis.com/` `https://api.deepseek.com/`)**: These permissions are **strictly required for the core AI Assistant feature**.
     *   **Purpose**: To enable "Smart Add" and "Generate Report" functionalities, the extension needs to send requests from your browser directly to the AI service provider (OpenAI or Google Gemini) that you have selected and configured.
     *   **User Control**: This feature is entirely optional and opt-in. It only functions if you **explicitly provide your own personal API Key** in the extension's settings.
     *   **Data Privacy**: The extension acts only as a conduit. **We do not collect, store, or have access to your API Key or the content of your requests to these services.** The communication occurs directly between your browser and the respective AI provider's servers. Without these permissions, the AI Assistant feature will be disabled, but all other features of the extension will remain fully functional.
+*   **Host Permissions (`https://notion-auth-proxy.martinlinzhiwu.workers.dev/`)**: Requesting host permissions for https://notion-auth-proxy.martinlinzhiwu.workers.dev/ is necessary to enable this plugin's “AI report export to Notion” feature. Following Google's recommended security best practices, the exchange of sensitive information during the user's Notion authorization process (using the OAuth 2.0 protocol to exchange authorization codes for access tokens) will be handled on our Cloudflare Worker proxy server, rather than on the user's browser. This approach securely protects users' authorization credentials and prevents any sensitive keys from being exposed in the frontend code. Therefore, the plugin requires this permission to establish secure communication with the proxy server to complete the Notion authorization process and subsequent data export operations.
+
+Translated with DeepL.com (free version)
 
 ## 4. Third-Party Services
 
